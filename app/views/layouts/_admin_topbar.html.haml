@@ -22,10 +22,10 @@
     -#   = link_to "Supplies", cms_supplies_path
     -# %li{:class => ('active' if current_page?(cms_stories_path))}
     -#   = link_to "Stories", cms_stories_path
-    -# %li{:class => ('active' if current_page?(cms_plan_path))}
-    -#   = link_to "Plan", cms_plan_path
     -# %li{:class => ('active' if current_page?(cms_about_path))}
     -#   = link_to "About", cms_about_path
+    %li{:class => ('active' if current_page?(cms_plan_path))}
+      = link_to "Plan", cms_plan_path
     %li
       = link_to "Map & Updates Settings", cms_map_path
     %li.user

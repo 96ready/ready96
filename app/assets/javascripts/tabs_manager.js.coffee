@@ -1,4 +1,3 @@
-
 window.showActive = (elements) ->
 	urlHash = window.location.hash || elements[0].href
 	activeElem = _(elements).find (elem) -> elem.href == urlHash

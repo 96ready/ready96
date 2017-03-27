@@ -1,7 +1,7 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
   before_filter :set_locale
- 
+
   include SimpleCaptcha::ControllerHelpers
 
   before_filter :set_configured_vars
@@ -22,7 +22,7 @@ class ApplicationController < ActionController::Base
   		end
   	end
   end
- 
+
   def set_locale
     I18n.locale = params[:locale] || I18n.default_locale
   end
@@ -36,6 +36,11 @@ class ApplicationController < ActionController::Base
   end
 
   private
+
+  def after_sign_in_path_for(resource)
+    cms_root_path
+  end
+
     def after_sign_out_path_for(resource_or_scope)
       cms_root_path
     end
