@@ -24,19 +24,11 @@
     %p.help-block These three values determine what will show up in the three tabs of Twitter Updates.
     .row
       .timelines-container
-        = f.input :citizen_timeline_id, label: 'Your Timeline ID <span class="help">(a long number)</span>'.html_safe, required: false
+        = f.input :citizen_timeline_id, label: 'Your Timeline URL <span class="help">(https://twitter.com/readyninesix/lists/officialupdates)</span>'.html_safe, required: false
 
-        = f.input :partner_timeline_id, label: 'Partner List ID', required: false
+        = f.input :partner_timeline_id, label: 'Partner List URL', required: false
 
-        = f.input :transportation_timeline_id, label: 'Transportation List ID', required: false
-
-
-      .timelines-instructions
-        %h2 Instructions to get a Twitter timeline ID:
-        %ol
-          %li Set up Twitter lists that correspond to each updates section (see <a href="http://toolkit.sf72.org/twitter" target="_blank">toolkit.sf72.org/twitter</a>).
-          %li Through Twitter's create widget interface can see the URL for your Twitter list.
-          %li Copy the long number at the end of the URL to paste here.
+        = f.input :transportation_timeline_id, label: 'Transportation List URL', required: false
 
 
     - unless flash.empty?
