@@ -47,9 +47,12 @@
 
 
 .home .page-intro .home-title {
-	@include retina-image(/assets/static/home-main, 1020px 538px, jpg);
-	background-position: left top;
+	@include retina-image(/assets/static/medium-warriors-pic, 1500px 1000px, jpg);
+	background-position: 25% 45%;
 	text-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
+    @media (max-width: $mobile-breakpoint-width) {
+      background-position: 35% 25%;
+    }
 }
 
 .home .page-intro .home-title {
@@ -113,9 +116,6 @@
 		width: 44rem;
 	}
 }
-
-
-
 
 .questions {
   @include row();

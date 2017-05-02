@@ -2,7 +2,7 @@
 .main-container.home
   = render :partial => "partials/header"
   .page-intro
-    .home-title{:style => "background-image: url(#{"/assets/static/home-main.jpg"})"}
+    .home-title{:style => "background-image: url(#{"/assets/static/medium-warriors-pic.jpg"})"}
       %h1
         = t(:hero_image_text)
   .questions.myrow
@@ -45,20 +45,7 @@
           %h3
             = t(:transportation_updates)
   .main-container.home-updates-wrapper.mobile-home{style: 'overflow: hidden'}
-    .updates
-      .citizen-reports.twitter-tab
-        <style type="text/css">#twitter-widget-1{width:70%}</style>
-        <a class="twitter-timeline" data-widget-id="#{@emergency_data.citizen_timeline_id}" width="500px" height="660" data-chrome="noheader nofooter noborders" data-aria-polite="assertive"></a>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-      .official-reports.twitter-tab
-        <style type="text/css">#twitter-widget-2{width:70%}</style>
-        <a class="twitter-timeline" data-widget-id="#{@emergency_data.partner_timeline_id}" width="500px" height="660" data-chrome="noheader nofooter noborders" data-aria-polite="assertive"></a>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-      .status.twitter-tab
-        <style type="text/css">#twitter-widget-3{width:70%}</style>
-        <a class="twitter-timeline" data-widget-id="#{@emergency_data.transportation_timeline_id}" width="500px" height="660" data-chrome="noheader nofooter noborders" data-aria-polite="assertive" >Tweets by @511SFBay</a>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
+    = render 'twitter_widget'
   .learn
     %h1
       = t(:good_news)

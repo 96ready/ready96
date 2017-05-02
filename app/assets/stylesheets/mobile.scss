@@ -882,13 +882,24 @@ $mobile-padding: 20px;
 	    }
 	  }
 	  .em-plan h1 {
-	    margin-top: 0;
+	    margin-top: 2.5rem;
 	  }
 
+      .em-plan div {
+        display: block;
+        float: right;
+        margin-left: 2.35765%;
+        width: 26.4783%;
+        color: #FFF;
+        background-color: #fbb03b;
+        padding: 0 20px 0 30px;
+        height: 417px;
+        margin-right: -1px;
+      }
 	  .em-plan div p {
-	    font-size: 1rem;
-	    line-height: 1.375;
-	    margin-top: 1rem;
+        font-size: 1.1rem;
+        line-height: 1.625rem;
+        margin-top: 3rem;
 	  }
 	}
 

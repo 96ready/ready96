@@ -2,10 +2,8 @@
 = javascript_include_tag "home"
 .main-container.plan
   = render :partial => "partials/header"
-  .opening.em-plan{:style => "background-image: url(#{@plan.community_image.url || "assets/placeholder-plan.jpg"})"}
+  .opening.em-plan{:style => "background-image: url(#{"/assets/static/sharks.jpg"})"}
     %h1 Make a plan with your people.
-    %div
-      %p Emergency planning can feel overwhelming. We’ve broken it down into simple steps and provided tools that will make it feel do-able. The same connections that are important in everyday life—with friends, family, neighbors, and communities—are even more crucial in a crisis.
   .meet-up
     %h2 Set up your meet up.
     %p First, make an emergency plan with your inner circle of friends, relatives, or immediate family. That way, you will each know what to do in an emergency.
