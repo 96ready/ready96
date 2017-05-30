@@ -334,7 +334,8 @@ en:
   #===========================#
   #Footer Text
   #===========================#
-  footer_text: "Brought to you by ..."
+  brought_to_you_by: "Brought to you by San Jose Firefighters"
+  for_families: "for First Responders and their families."
   find_out_more: "Find out more"
   about_us: "About Us"
   contact_us: "Contact Us"
