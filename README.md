@@ -9,8 +9,10 @@ Included in this guide:
 **This codebase was derived from City72**. An example of a deployed site is [safegnv.org](http://safegnv.org). For more information about the toolkit, visit [toolkit.sf72.org](http://toolkit.sf72.org).
 
 **License and Copying:**
-The **code is open source** and licensed under the MIT license.
-The **photos are copyright** and belong to their respective photographers. The photos are used with permission on the Ready96 site only. They may only be used in other instances with explicit permission from the photographer.
+
+**The code is open source** and licensed under the MIT license.
+
+**The photos are copyright** and belong to their respective photographers. The photos are used with permission on the Ready96 site only. They may only be used in other instances with explicit permission from the photographer.
 
 
 **Differences (Drift from City72):**
