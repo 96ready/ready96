@@ -10,21 +10,20 @@ Included in this guide:
 
 **License and Copying:**
 The **code is open source** and licensed under the MIT license.
-The **photos are copyright** and belong to their respective photographer. The photos are used with permission on the Ready96 only and may only be used on other instances with permission from the photographer.
+The **photos are copyright** and belong to their respective photographers. The photos are used with permission on the Ready96 site only. They may only be used in other instances with explicit permission from the photographer.
 
 
 **Differences (Drift from City72):**
 
-• This codebase is set up so that all the text strings come from a locale file.
+• This codebase is set up so that all the text strings come from the "en.yml" locale file.
 
-• This site is less reliant on a content management system (CMS). Instead, customize the site by editing image files and the locale file. This difference affords translation and customization with a pretty basic knowledge of HTML and CSS.
+• This site is less reliant on a content management system (CMS). Instead, customize the site by editing image files and the locale file. This difference affords the possibility of translation. It also means that you can completely customize what the site says.
 
-• The Cloudinary add-on is not used. However, the add-on is still referenced in the code, in case you wish to enable the functionality. In other words, you do not need to pay for the premium add-on if you leave things as they are currently configured.
+• The Cloudinary add-on is not used. However, the add-on is still referenced in the code, in case you wish to enable the functionality. In other words, you do not need to pay for the premium Heroku Add-on if you leave things as currently configured.
 
-• City72 currently assumes that the site you are creating is for a city. Since all of the text here is editable, this codebase could more readily be adapted for a county, organization, or other community.
+• Since all of the text here is editable, this codebase could more readily be adapted for a county, organization, or other community. (City72 assumes you are creating a site for a city and uses the word city in non-editable text throughout)
 
-• This codebase requires a little more technical know-how but offers much more flexibility in terms customization and localization. It also uses a more recent version of Rails.
-
+• This codebase requires a little more technical know-how but offers much more flexibility in terms customization and localization.
 
 ---
 
@@ -34,7 +33,7 @@ Deploying to Heroku is the quickest way to launch an instance of this site.
 
 1. [Fork this repository](https://github.com/gnv-org/gnv#fork-destination-box).
 
-2. From your new GitHub repository, press the button below to deploy to heroku:
+2. From your new GitHub repository, press the button below to deploy to Heroku:
 
      [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
@@ -42,7 +41,7 @@ Deploying to Heroku is the quickest way to launch an instance of this site.
 
 ## Add-ons
 
-The following free add-ons are automatically installed as part of set-up. Even though the add-ons are free, you have to verify your account by adding a credit card.
+The following free add-ons are automatically installed as part of the set-up process. Even though the add-ons are free, you have to verify your account by adding a credit card.
 
 * **PostgreSQL** is the database for your application.
 * **SendGrid** sends emails from your application (e.g. the forgot password email).
@@ -50,17 +49,17 @@ The following free add-ons are automatically installed as part of set-up. Even t
 
 ## Configure the recover password host redirection:
 
-During setup, you will be prompted to enter a `EMAIL_REDIRECT_HOST`, used within the emails sent from your application. The value should be `YOURAPPNAME.herokuapp.com`
+During setup, you will be prompted to enter an `EMAIL_REDIRECT_HOST`, used within the emails sent from your application. The value should be `YOURAPPNAME.herokuapp.com`
 
 ## Heroku Dynos
 
-For testing purposes, you can choose an application with no extra dynos (this will be free). Please note that **sites with no extra dynos "go to sleep"** and can be slow to wake up. So, when you are ready to let the public use your site, make sure that your Heroku appliation has at least `2 dynos`.
+For testing purposes, you can choose an application with no extra dynos (this will be free). Please note that **sites with no extra dynos "go to sleep"** and can be slow to wake up. So, when you are ready to let the public use your site, make sure that your Heroku application has at least `2 dynos`.
 
-When you are ready to launch, go to your Heroku account upgrade the app to 'Hobby' or better. There is a monthly fee associated with having an extra dyno. This will also make sure the app is served over https so that the Google Crisis Map will work properly.
+When you are ready to launch, go to your Heroku account upgrade the app to 'Hobby' or better. There is a monthly fee associated with having an extra dyno. This will also make sure the app is served via https so that the Google Crisis Map will work properly.
 
 ## FINAL STEP: Update your username and password via the Content Editor
 
-Your site was installed with a default username and password (these are set in the db/seeds.rb file). Go to your app and login
+Your site was installed with a default username and password (these are set in the db/seeds.rb file). Go to your app and log in.
 
 `http://YOURAPPNAME.herokuapp.com/cms`
 
@@ -70,7 +69,7 @@ The default username and password are:
 
 `password`
 
-Once you login, use the Admin menu in the navigation to change the email to your email address. Then you will need to change the password to a strong password that only you know.
+Once you log in, use the Admin menu in the navigation to change the email to your email address. Then you will need to change the password to a strong password that only you know.
 
 
 ---
@@ -78,7 +77,7 @@ Once you login, use the Admin menu in the navigation to change the email to your
 
 # Development Environment Setup
 
-In most cases you will not need to setup a development environment for this application. The only reason to go through the following steps would be if you wanted to customize your site beyond what you can set with the Content Editor.
+In most cases, you will not need to setup a development environment for this application. The only reason to go through the following steps would be if you wanted to customize your site beyond what you can set with the Content Editor.
 
 ## Prerequisites
 
@@ -115,7 +114,7 @@ When rbenv is already installed, go to the project's root folder, and run the fo
 ```
 
 ### Bundler gem
-In order the manage the project dependencies, it is necessary to have installed *bundler*.
+In order to manage the project dependencies, it is necessary to have installed *bundler*.
 
 ```sh
  $ gem install bundler
@@ -137,7 +136,7 @@ Before running the app, the following steps should be performed.
 * Create the database user for the application
 * Install the application dependencies
 * Create the database
-* Download the client-side dependecies
+* Download the client-side dependencies
 
 ### Obtain a copy of the application
 
