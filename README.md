@@ -1,5 +1,5 @@
 Included in this guide:
-  * [About safeGNV](#about-safegnv)
+  * [About This Code Base](#about)
   * [Deploy on Heroku](#deploy-on-heroku)
   * [Development Environment Setup](#development-environment-setup)
 
@@ -8,31 +8,33 @@ Included in this guide:
 
 **This codebase was derived from City72**. An example of a deployed site is [safegnv.org](http://safegnv.org). For more information about the toolkit, visit [toolkit.sf72.org](http://toolkit.sf72.org).
 
+**License and Copying:**
+The **code is open source** and licensed under the MIT license.
+The **photos are copyright** and belong to their respective photographer. The photos are used with permission on the Ready96 only and may only be used on other instances with permission from the photographer.
+
 
 **Differences (Drift from City72):**
 
 • This codebase is set up so that all the text strings come from a locale file.
 
-• This site is less reliant on a content management system (CMS). Instead, you would customize the site by editing image files and the locale file. This difference affords translation and customization with a pretty basic knowledge of HTML and CSS (and lots of patience).
+• This site is less reliant on a content management system (CMS). Instead, customize the site by editing image files and the locale file. This difference affords translation and customization with a pretty basic knowledge of HTML and CSS.
 
 • The Cloudinary add-on is not used. However, the add-on is still referenced in the code, in case you wish to enable the functionality. In other words, you do not need to pay for the premium add-on if you leave things as they are currently configured.
 
 • City72 currently assumes that the site you are creating is for a city. Since all of the text here is editable, this codebase could more readily be adapted for a county, organization, or other community.
 
-
-• This codebase requires a little more technical know-how but offers much more flexibility in terms customization and localization. 
+• This codebase requires a little more technical know-how but offers much more flexibility in terms customization and localization. It also uses a more recent version of Rails.
 
 
 ---
 
 # Deploy on Heroku
 
-Deploying to Heroku is the quickest way to launch an instance this site that you can adapt for your own community.
+Deploying to Heroku is the quickest way to launch an instance of this site.
 
 1. [Fork this repository](https://github.com/gnv-org/gnv#fork-destination-box).
 
-
-2. From your new GitHub repository, press the button below to deploy to heroku:  
+2. From your new GitHub repository, press the button below to deploy to heroku:
 
      [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
@@ -50,11 +52,11 @@ The following free add-ons are automatically installed as part of set-up. Even t
 
 During setup, you will be prompted to enter a `EMAIL_REDIRECT_HOST`, used within the emails sent from your application. The value should be `YOURAPPNAME.herokuapp.com`
 
-## Scale to 2 dynos
-
-First, go to your Heroku account and create an application to be used for the project. When asked for the number of `web dynos` to be used in your application select `2`. There is a small monthly fee associated with having an extra dyno.
+## Heroku Dynos
 
 For testing purposes, you can choose an application with no extra dynos (this will be free). Please note that **sites with no extra dynos "go to sleep"** and can be slow to wake up. So, when you are ready to let the public use your site, make sure that your Heroku appliation has at least `2 dynos`.
+
+When you are ready to launch, go to your Heroku account upgrade the app to 'Hobby' or better. There is a monthly fee associated with having an extra dyno. This will also make sure the app is served over https so that the Google Crisis Map will work properly.
 
 ## FINAL STEP: Update your username and password via the Content Editor
 
@@ -146,7 +148,7 @@ The command you type into your shell application (Terminal on the Mac) will be:
 $ git clone https://github.com/96ready/ready96.git
 ```
 
-This will create a directory named `city-72`.
+This will create a directory named `ready96`.
 
 ### Create the database user for the application
 
