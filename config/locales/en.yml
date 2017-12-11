@@ -245,7 +245,7 @@ en:
   read_and_print_html: "Read and print our Quake Guide to learn a few easy steps to stay safe. For in-depth information checkout <a href='%{link}' target='_blank'>ready.gov</a>."
 
   #plan-widget Strings
-  # before_emergency: "Before a Hurricane"
+  before_emergency: "Before a Earthquake"
   during_emergency: "During an Earthquake"
   after_emergency: "After an Earthquake"
   print_guide: "Print Guide"
@@ -281,21 +281,21 @@ en:
   #About Us Page
   #===========================#
   for_us_by_us: "Ready96 is for us, by us."
-  our_mission : "Our mission is to enable Firefighters and their families to get prepared. Ready96 was created by San Jose Firefighters & San Jose Fire Department , with the belief that the best way to do this is to get connected to each other, share resources, and start re-imagining the way we think about emergencies."
+  our_mission : "Our mission is to enable Firefighters and their families to get prepared. Ready96 was created by Firefighters, with the belief that the best way to do this is to get connected to each other, share resources, and start re-imagining the way we think about emergencies."
   who : "Who"
-  who_p1 : "For SJFD, by SJFD."
+  who_p1 : "Ready96 is for the San Jose Fire Department, by the San Jose Fire Department."
   who_p2 : "The fire department family is like no other community – and this platform is tailored to the particular quirks, context and people that make up this special group."
   what : "What"
-  what_p1 : "A people-centered vision of emergency preparedness. Nobody likes to think about emergencies, but Ready96 takes the mystery out of the process of getting prepared. We do this by telling human stories and providing tools that fit into your daily life."
-  what_p2 : "Ready96 is not a new social network. It’s a platform designed to plug into your existing networks – whether social or digital."
+  what_p1 : "We aim to take the mystery out of the process of getting prepared by telling human stories and providing tools that fit into your daily life."
+  what_p2 : "Ready96 is a platform designed to plug into your existing networks – whether social or digital."
   why : "Why"
   why_p1 : "A little now will mean a lot later; connecting with your network, downloading an app, or watching a video is the first step towards being better prepared for an emergency."
-  why_p2 : "San Jose Firefighters are leading the charge for a different kind of emergency prep. Let’s start the movement."
-  image_credits : "Image Credits"
-  photographer_1_html: "\"<a href='%{link}' target='_blank'>Can I See the View, Too?</a>\" by Chris Lindamood"
-  photographer_2_html: "\"<a href='%{link}' target='_blank'>Viva 500 Geocaching</a>\" by Dana Moser"
-  photographer_3_html: "\"<a href='%{link}' target='_blank'>Doug and Gus</a>\" by Farol Tomson"
-  photographer_4_html: "\"<a href='%{link}' target='_blank'>Paynes Prairie Watching</a>\" by Marcy Hairston"
+  why_p2 : "This is a different kind of emergency prep. Let’s start the movement."
+  image_credits : "Photography"
+  photographer_1_html: "<a href='%{link}' target='_blank'>Photos</a> by Craig Allyn Rose"
+  # photographer_2_html: "\"<a href='%{link}' target='_blank'>Viva 500 Geocaching</a>\" by Dana Moser"
+  # photographer_3_html: "\"<a href='%{link}' target='_blank'>Doug and Gus</a>\" by Farol Tomson"
+  # photographer_4_html: "\"<a href='%{link}' target='_blank'>Paynes Prairie Watching</a>\" by Marcy Hairston"
 
 
   #===========================#
