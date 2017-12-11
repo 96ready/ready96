@@ -69,7 +69,7 @@
   @include outer-container;
   @include row();
 
-	margin-top: 50px;	
+	margin-top: 50px;
 	margin-bottom: 1rem;
 	padding: 0 30px;
 
@@ -83,10 +83,10 @@
 	    padding-top: 200px;
 	  }
 	}
-	  
+
 	h2 {
 		@include col-title;
-		line-height: 2.5rem;
+		line-height: 3.5rem;
 	}
 
 	p {
@@ -110,7 +110,7 @@
 	    @include retina-image(/assets/static/about-us-2, 302px 200px, jpg);
 	    background-repeat: no-repeat;
 	  }
-	  
+
 	  .about-why {
 	    @include retina-image(/assets/static/about-us-3, 302px 200px, jpg);
 	    background-repeat: no-repeat;
