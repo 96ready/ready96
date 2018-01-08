@@ -86,7 +86,7 @@ In most cases, you will not need to setup a development environment for this app
 To setup the application you will need:
 
 * PostgreSQL database
-* Ruby 1.9.3-p448
+* Ruby 1.9.3-p551
 * Bundler gem
 * Bower
 
@@ -107,7 +107,7 @@ To setup the application you will need:
 
 To install ruby, it is necessary to have *rbenv* installed. This can be installed following the steps described in [rbenv's Github Repository](https://github.com/sstephenson/rbenv), in the [Installation Section](https://github.com/sstephenson/rbenv#installation).
 
-#### Ruby 1.9.3-p448
+#### Ruby 1.9.3-p551
 
 When rbenv is already installed, go to the project's root folder, and run the following command
 
