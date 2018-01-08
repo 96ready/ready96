@@ -302,8 +302,8 @@ en:
   #Map & Updates Page(s)
   #===========================#
   em_home_title: "SafeGNV - Real-time Information"
-  in_an_emergency: "This is your real-time hub regarding critical community information."
-  you_will_find: "You’ll find official updates, partner updates, traffic information, and an interactive map to navigate community resources. Tour this page to better understand how to use it during a situation or an emergency."
+  in_an_emergency: "A hub for critical community information."
+  you_will_find: "Find official updates, partner updates, and traffic information on this interactive map of community resources. Check out the Map Guide to better understand how to use this resource during a situation or an emergency."
   map_guide: "Map Guide"
   expand_map: "Expand Map"
   official_updates: "Official Updates"
