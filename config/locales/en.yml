@@ -33,7 +33,7 @@ en:
   what_is: "What is Ready96?"
   what_text: "Ready96 is your hub for emergency preparedness. You’ll find information about what to do in an emergency, simple steps to get connected, and useful guides to help you get prepared. Share Ready96 with a friend—and help your loved ones and your community get prepared."
   why_72: "Why 96?"
-  why_text: "In a serious emergency, services will be impacted, so a basic rule of thumb is for first responders to be able to take care of each other for 96 hours before help arrives. That’s just four days—think of it as a long weekend—or twelve meals."
+  why_text: "In a serious emergency, services will be impacted. So, a basic rule of thumb for first responders is to be able to take care of each other for 96 hours or more while help is given to those who find themselves less prepared. That’s just four days—an extra long weekend—or twelve meals."
   motto: "We believe in connection, not catastrophe."
   motto_explained: "Actual emergencies look more like people coming together than cities falling apart. Ready96 is about prompting members of the community to get connected before an emergency—so we can be that much better off when something happens."
   good_news: "Good news. You’re more prepared than you think."
@@ -302,8 +302,8 @@ en:
   #Map & Updates Page(s)
   #===========================#
   em_home_title: "SafeGNV - Real-time Information"
-  in_an_emergency: "This is your real-time hub regarding critical community information."
-  you_will_find: "You’ll find official updates, partner updates, traffic information, and an interactive map to navigate community resources. Tour this page to better understand how to use it during a situation or an emergency."
+  in_an_emergency: "A hub for critical community information."
+  you_will_find: "Find official updates, partner updates, and traffic information on this interactive map of community resources. Check out the Map Guide to better understand how to use this resource during a situation or an emergency."
   map_guide: "Map Guide"
   expand_map: "Expand Map"
   official_updates: "Official Updates"
